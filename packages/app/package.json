@@ -8,7 +8,7 @@
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "@reach/router": "^1.3.4",
-    "@react-ui/components": "^1.0.0",
+    "@make-components-library/components": "^1.0.0",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",

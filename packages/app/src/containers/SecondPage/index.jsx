@@ -3,7 +3,7 @@
  */
 
 import Center from 'components/Center'
-import { Button } from '@react-ui/components'
+import { Button } from '@make-components-library/components'
 
 function SecondPage() {
   return (

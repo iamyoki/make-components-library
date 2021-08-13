@@ -1,5 +1,5 @@
 {
-  "name": "@react-ui/components",
+  "name": "@make-components-library/components",
   "version": "1.0.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
