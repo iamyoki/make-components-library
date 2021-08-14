@@ -17,6 +17,7 @@ const buttonSize = {
   }
 }
 
+/** Button */
 export function Button({ children, size, ...props }: ButtonProps) {
   return (
     <button
