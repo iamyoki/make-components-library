@@ -4,6 +4,7 @@ import Routes from './Routes'
 import globalCss from './global.css'
 import Providers from './components/Providers'
 
+/** App */
 function App() {
   return (
     <Providers>
