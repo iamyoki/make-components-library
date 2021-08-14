@@ -13,7 +13,7 @@ install:
   - yarn install --frozen-lockfile
 
 script:
-  - yarn run build --since HEAD^
+  - yarn run build
 
 deploy:
   provider: pages
@@ -23,4 +23,3 @@ deploy:
   local_dir: packages/app/build
   on:
     branch: main
-    condition: $BUILD_APP = true
