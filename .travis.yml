@@ -24,3 +24,4 @@ deploy:
   local_dir: packages/app/build
   on:
     branch: main
+    condition: $BUILD_APP = true
