@@ -1,7 +1,7 @@
-import pkg from './package.json'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
-import commonjs from '@rollup/plugin-commonjs'
-import babel from '@rollup/plugin-babel'
+import typescript from '@rollup/plugin-typescript'
+import peerDepsExternal from 'rollup-plugin-peer-deps-external'
+import pkg from './package.json'
 
 const extensions = ['.ts', '.tsx', '.js', '.jsx']
 
@@ -12,20 +12,19 @@ const options = {
     {
       file: pkg.main,
       format: 'cjs',
-      sourcemap: true,
+      sourcemap: true
     },
     {
       file: pkg.module,
       format: 'esm',
-      sourcemap: true,
-    },
+      sourcemap: true
+    }
   ],
   plugins: [
+    peerDepsExternal(),
     nodeResolve({ extensions }),
-    babel({ extensions, babelHelpers: 'bundled' }),
-    // commonjs({ extensions }),
-  ],
-  external: ['react', 'react-dom', 'react/jsx-runtime']
+    typescript({ tsconfig: './tsconfig.json', declaration: false, declarationMap: false }),
+  ]
 }
 
 export default options

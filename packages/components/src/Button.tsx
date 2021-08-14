@@ -1,5 +1,5 @@
 import React from 'react'
-import { mStyle } from '@/utils/mergeStyleProp'
+import { mStyle } from './utils/mergeStyleProp'
 
 interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
   size?: 'sm' | 'md' | 'lg'
@@ -22,7 +22,7 @@ export function Button({ children, size, ...props }: ButtonProps) {
   return (
     <button
       style={mStyle(props, {
-        color: 'slateblue',
+        color: 'coral',
         background: 'lavender',
         ...buttonSize[size ?? 'sm']
       })}
