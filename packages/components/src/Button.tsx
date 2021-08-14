@@ -1,5 +1,5 @@
 import React from 'react'
-import { mStyle } from '@/utils/mergeStyleProp'
+import { mStyle } from './utils/mergeStyleProp'
 
 interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
   size?: 'sm' | 'md' | 'lg'

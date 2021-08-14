@@ -1,6 +1,8 @@
 {
   "extends": "./tsconfig",
   "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
     "declarationDir": "./dist/types",
     "emitDeclarationOnly": true,
     "isolatedModules": true

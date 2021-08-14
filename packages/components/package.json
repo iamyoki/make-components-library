@@ -10,9 +10,9 @@
   "license": "MIT",
   "scripts": {
     "start": "concurrently 'yarn:build:* --watch'",
-    "build": "concurrently yarn:build:*",
-    "build:cjs": "cross-env BABEL_ENV=cjs babel src --extensions .ts,.tsx --out-dir dist/cjs --source-maps",
-    "build:esm": "cross-env BABEL_ENV=esm babel src --extensions .ts,.tsx --out-dir dist/esm --source-maps",
+    "build": "del-cli dist && concurrently yarn:build:*",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
     "build:types": "tsc -p ./tsconfig.types.json"
   },
   "devDependencies": {
@@ -25,6 +25,7 @@
     "babel-plugin-module-resolver": "^4.1.0",
     "concurrently": "^6.2.1",
     "cross-env": "^7.0.3",
+    "del-cli": "^4.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "typescript": "^4.3.5"
