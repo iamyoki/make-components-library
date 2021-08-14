@@ -14,7 +14,7 @@ install:
 
 script:
   - yarn run build --since main
-  - ls -l
+  - ls -l packages/app
 
 deploy:
   provider: pages
