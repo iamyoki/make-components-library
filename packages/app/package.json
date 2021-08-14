@@ -2,6 +2,7 @@
   "name": "app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://iamyoki.github.io/make-components-library",
   "dependencies": {
     "@chakra-ui/button": "^1.4.2",
     "@chakra-ui/system": "^1.7.2",
