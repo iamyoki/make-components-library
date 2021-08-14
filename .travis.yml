@@ -13,8 +13,7 @@ install:
   - yarn install --frozen-lockfile
 
 script:
-  - yarn run build --since main
-  - ls -l packages/app
+  - yarn run build --since HEAD^
 
 deploy:
   provider: pages
