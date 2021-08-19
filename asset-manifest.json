@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/make-components-library/static/js/main.76e26535.chunk.js",
-    "main.js.map": "/make-components-library/static/js/main.76e26535.chunk.js.map",
+    "main.js": "/make-components-library/static/js/main.138d75a3.chunk.js",
+    "main.js.map": "/make-components-library/static/js/main.138d75a3.chunk.js.map",
     "runtime-main.js": "/make-components-library/static/js/runtime-main.76013ca3.js",
     "runtime-main.js.map": "/make-components-library/static/js/runtime-main.76013ca3.js.map",
     "static/js/2.252a25da.chunk.js": "/make-components-library/static/js/2.252a25da.chunk.js",
@@ -14,6 +14,6 @@
   "entrypoints": [
     "static/js/runtime-main.76013ca3.js",
     "static/js/2.252a25da.chunk.js",
-    "static/js/main.76e26535.chunk.js"
+    "static/js/main.138d75a3.chunk.js"
   ]
 }
